@@ -79,7 +79,19 @@ module aes_core(input  logic         clk,
                 output logic         done, 
                 output logic [127:0] cyphertext);
 
-    // TODO: Your code goes here
+	logic [127:0] y0, y1, y2, y3, y4;
+	logic [127:0] roundkey;
+	logic [3:0] round;
+
+	assign round = 1;
+	addRoundKey arkcore1(plaintext, key, y0);
+	subByte sbcore1(y0, clk, y1);
+	shiftRows srcore1(y1, y2);
+	mixcolumns mccore1(y2, y3);
+	keyExpansion keyexp1(key, round, clk, roundkey);
+	addRoundKey arkcore2(y3, roundkey, cyphertext);
+
+	assign done = 1;
     
 endmodule
 
@@ -108,6 +120,7 @@ module sbox_sync(
 endmodule
 
 module subByte(input logic [127:0] a,
+              input logic clk,
               output logic [127:0] y);
 
   // row 0
@@ -175,7 +188,7 @@ endmodule
 //   Same operation performed on each of four columns
 /////////////////////////////////////////////
 
-module mixcolumns(input  logic [127:0] a,
+module mixcolumns(input logic [127:0] a,
                   output logic [127:0] y);
 
   mixcolumn mc0(a[127:96], y[127:96]);
@@ -242,6 +255,7 @@ module subWord(input logic [31:0] a,
                 output logic [31:0] y); 
 
   logic [7:0] a0, a1, a2, a3, y0, y1, y2, y3;
+  assign {a0, a1, a2, a3} = a;
 
   sbox_sync sba0(a0, clk, y0);
   sbox_sync sba1(a1, clk, y1);
@@ -260,17 +274,28 @@ module keyExpansion(input logic [127:0] key,
   logic [31:0] key0, key1, key2, key3;
   logic [31:0] rkey0, rkey1, rkey2, rkey3;
   logic [31:0] rcon;
-  logic [7:0] j, rcon1, rcon2, rcon3;
+  logic [7:0] j;
   logic [31:0] rotKey, subKey;
 
   assign {key0, key1, key2, key3} = key;
 
-  assign j = 2^(round-1);
-  assign rcon1 = 0;
-  assign rcon2 = 0;
-  assign rcon3 = 0;
 
-  assign rcon = {j, rcon1, rcon2, rcon3};
+
+  always_ff @(posedge clk)
+    if (round == 9) 
+      begin 
+        assign j = 8'h1b; 
+      end
+    else if(round == 10) 
+      begin 
+        assign j = 8'h36; 
+      end
+    else 
+      begin
+      assign j = 8'h01 << (round-1);
+      end
+ 
+  assign rcon = {j, 24'h0};
 
   rotWord r1(key3, rotKey);
 
