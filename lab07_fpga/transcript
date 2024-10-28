@@ -1,0 +1,510 @@
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.shiftRowstb
+# vsim -gui work.shiftRowstb 
+# Start time: 20:28:18 on Oct 27,2024
+# //  ModelSim DE-64 2022.3 Jul 18 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.shiftRowstb
+# Loading work.shiftRows
+add wave -position end  sim:/shiftRowstb/y_expected
+add wave -position end  sim:/shiftRowstb/y
+add wave -position end  sim:/shiftRowstb/clk
+add wave -position end  sim:/shiftRowstb/a
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.subBytetb
+# End time: 20:31:08 on Oct 27,2024, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 4
+# vsim -gui work.subBytetb 
+# Start time: 20:31:08 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.subBytetb
+# Loading work.subByte
+# Loading work.sbox_sync
+add wave -position end  sim:/subBytetb/y_expected
+add wave -position end  sim:/subBytetb/y
+add wave -position end  sim:/subBytetb/clk
+add wave -position end  sim:/subBytetb/a
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.subBytetb
+# Loading work.subByte
+# Loading work.sbox_sync
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.mixcolumnstb
+# End time: 20:40:27 on Oct 27,2024, Elapsed time: 0:09:19
+# Errors: 0, Warnings: 4
+# vsim -gui work.mixcolumnstb 
+# Start time: 20:40:27 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.mixcolumnstb
+# Loading work.mixcolumns
+# Loading work.mixcolumn
+# Loading work.galoismult
+add wave -position end  sim:/mixcolumnstb/y_expected
+add wave -position end  sim:/mixcolumnstb/y
+add wave -position end  sim:/mixcolumnstb/clk
+add wave -position end  sim:/mixcolumnstb/a
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.rotWordtb
+# End time: 20:45:43 on Oct 27,2024, Elapsed time: 0:05:16
+# Errors: 0, Warnings: 4
+# vsim -gui work.rotWordtb 
+# Start time: 20:45:43 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.rotWordtb
+# Loading work.rotWord
+add wave -position end  sim:/rotWordtb/y_expected
+add wave -position end  sim:/rotWordtb/y
+add wave -position end  sim:/rotWordtb/clk
+add wave -position end  sim:/rotWordtb/a
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.subWordtb
+# End time: 20:49:06 on Oct 27,2024, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 3
+# vsim -gui work.subWordtb 
+# Start time: 20:49:06 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.subWordtb
+# Loading work.rotWord
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /subWordtb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_subWord_tb.sv Line: 19
+# Error loading design
+# End time: 20:49:13 on Oct 27,2024, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 1
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.subWordtb
+# vsim -gui work.subWordtb 
+# Start time: 20:50:00 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.subWordtb
+# Loading work.subWord
+# Loading work.sbox_sync
+add wave -position end  sim:/subWordtb/y_expected
+add wave -position end  sim:/subWordtb/y
+add wave -position end  sim:/subWordtb/clk
+add wave -position end  sim:/subWordtb/a
+run 100
+add wave -position end  sim:/subWordtb/dut/sba0/y
+add wave -position end  sim:/subWordtb/dut/sba0/sbox
+add wave -position end  sim:/subWordtb/dut/sba0/clk
+add wave -position end  sim:/subWordtb/dut/sba0/a
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 100
+add wave -position end  sim:/subWordtb/dut/a3
+add wave -position end  sim:/subWordtb/dut/a2
+add wave -position end  sim:/subWordtb/dut/a1
+add wave -position end  sim:/subWordtb/dut/a0
+add wave -position end  sim:/subWordtb/dut/a
+restart -f
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f 
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.subWordtb
+# Loading work.subWord
+# Loading work.sbox_sync
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.keyExptb
+# End time: 21:14:24 on Oct 27,2024, Elapsed time: 0:24:24
+# Errors: 0, Warnings: 3
+# vsim -gui work.keyExptb 
+# Start time: 21:14:24 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.keyExptb
+# Loading work.subWord
+# Loading work.sbox_sync
+# ** Error (suppressible): (vsim-3389) Port 'key' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /keyExptb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_keyExp_tb.sv Line: 20
+# ** Error (suppressible): (vsim-3389) Port 'round' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /keyExptb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_keyExp_tb.sv Line: 20
+# ** Error (suppressible): (vsim-3389) Port 'roundkey' not found in the connected module (4th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /keyExptb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_keyExp_tb.sv Line: 20
+# Error loading design
+# End time: 21:14:31 on Oct 27,2024, Elapsed time: 0:00:07
+# Errors: 3, Warnings: 1
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.keyExptb
+# vsim -gui work.keyExptb 
+# Start time: 21:15:06 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+# ** Error: (vsim-3063) Port 'roundkey' not found in the connected module (4th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /keyExptb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_keyExp_tb.sv Line: 20
+# Error loading design
+# End time: 21:15:13 on Oct 27,2024, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 2
+vsim -gui work.keyExptb
+# vsim -gui work.keyExptb 
+# Start time: 21:15:35 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+# ** Error: (vsim-3063) Port 'roundkey' not found in the connected module (4th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /keyExptb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_keyExp_tb.sv Line: 20
+# Error loading design
+# End time: 21:15:42 on Oct 27,2024, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 1
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.keyExptb
+# vsim -gui work.keyExptb 
+# Start time: 21:17:18 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+# ** Error: (vsim-3063) Port 'roundkey' not found in the connected module (4th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /keyExptb/dut File: C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_keyExp_tb.sv Line: 20
+# Error loading design
+# End time: 21:17:26 on Oct 27,2024, Elapsed time: 0:00:08
+# Errors: 1, Warnings: 2
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.keyExptb
+# vsim -gui work.keyExptb 
+# Start time: 21:19:00 on Oct 27,2024
+# Loading sv_std.std
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+add wave -position end  sim:/keyExptb/roundkey_expected
+add wave -position end  sim:/keyExptb/roundKey
+add wave -position end  sim:/keyExptb/round
+add wave -position end  sim:/keyExptb/key
+add wave -position end  sim:/keyExptb/clk
+run 100
+add wave -position end  sim:/keyExptb/dut/rkey3
+add wave -position end  sim:/keyExptb/dut/rkey2
+add wave -position end  sim:/keyExptb/dut/rkey1
+add wave -position end  sim:/keyExptb/dut/rkey0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+add wave -position end  sim:/keyExptb/dut/subKey
+add wave -position end  sim:/keyExptb/dut/roundKey
+add wave -position end  sim:/keyExptb/dut/round
+add wave -position end  sim:/keyExptb/dut/rotKey
+add wave -position end  sim:/keyExptb/dut/rkey3
+add wave -position end  sim:/keyExptb/dut/rkey2
+add wave -position end  sim:/keyExptb/dut/rkey1
+add wave -position end  sim:/keyExptb/dut/rkey0
+add wave -position end  sim:/keyExptb/dut/rcon3
+add wave -position end  sim:/keyExptb/dut/rcon2
+add wave -position end  sim:/keyExptb/dut/rcon1
+add wave -position end  sim:/keyExptb/dut/rcon
+add wave -position end  sim:/keyExptb/dut/key3
+add wave -position end  sim:/keyExptb/dut/key2
+add wave -position end  sim:/keyExptb/dut/key1
+add wave -position end  sim:/keyExptb/dut/key0
+add wave -position end  sim:/keyExptb/dut/key
+add wave -position end  sim:/keyExptb/dut/j
+add wave -position end  sim:/keyExptb/dut/clk
+resart -f
+# invalid command name "resart"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+# Warning in wave window restart: (vish-4014) No objects found matching '/keyExptb/dut/rcon3'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/keyExptb/dut/rcon2'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/keyExptb/dut/rcon1'. 
+run 100
+restart -f
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+run 100
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 2 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv failed with 1 errors.
+# 10 compiles, 2 failed with 3 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 2 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv failed with 1 errors.
+# 10 compiles, 2 failed with 3 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 2 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 1 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 1 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 2 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 2 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv failed with 2 errors.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of aes_subBytye_tb.sv was successful.
+# Compile of aes_shiftRows_tb.sv was successful.
+# Compile of aes_mixcolumns_tb.sv was successful.
+# Compile of aes_rotWord_tb.sv was successful.
+# Compile of aes_subWord_tb.sv was successful.
+# Compile of aes_keyExp_tb.sv was successful with warnings.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keyExptb
+# Loading work.keyExpansion
+# Loading work.rotWord
+# Loading work.subWord
+# Loading work.sbox_sync
+run 100

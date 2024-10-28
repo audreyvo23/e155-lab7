@@ -1,0 +1,57 @@
+C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_subWord_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_subWord_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module subWordtb
+
+Top level modules:
+	subWordtb
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_mixcolumns_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_mixcolumns_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module mixcolumnstb
+
+Top level modules:
+	mixcolumnstb
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_subBytye_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_subBytye_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module subBytetb
+
+Top level modules:
+	subBytetb
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/src/aes_sbox_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/src/aes_sbox_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module testbench_aes_sbox
+
+Top level modules:
+	testbench_aes_sbox
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/src/aes_spi_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/src/aes_spi_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module testbench_aes_spi
+
+Top level modules:
+	testbench_aes_spi
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/src/aes_core_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/src/aes_core_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module testbench_aes_core
+
+Top level modules:
+	testbench_aes_core
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_rotWord_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_rotWord_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module rotWordtb
+
+Top level modules:
+	rotWordtb
+
+} {} {}} C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_shiftRows_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avo/Desktop/Lab7/lab07_fpga/aes_shiftRows_tb.sv
+Model Technology ModelSim DE-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
+-- Compiling module shiftRowstb
+
+Top level modules:
+	shiftRowstb
+
+} {} {}}
