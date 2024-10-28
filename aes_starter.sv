@@ -252,9 +252,57 @@ module subWord(input logic [31:0] a,
 
 endmodule
 
-module keyExpansion(input logic [127:0] a,
+module keyExpansion(input logic [127:0] key,
                     input logic [3:0] round,
                     input logic clk,
+                    output logic [127:0] roundKey);
+
+  logic [31:0] key0, key1, key2, key3;
+  logic [31:0] rkey0, rkey1, rkey2, rkey3;
+  logic [31:0] rcon;
+  logic [7:0] j, rcon1, rcon2, rcon3;
+  logic [31:0] rotKey, subKey;
+
+  assign {key0, key1, key2, key3} = key;
+
+  assign j = 2^(round-1);
+  assign rcon1 = 0;
+  assign rcon2 = 0;
+  assign rcon3 = 0;
+
+  assign rcon = {j, rcon1, rcon2, rcon3};
+
+  rotWord r1(key3, rotKey);
+
+  subWord s1(rotKey, clk, subKey);
+
+  assign rkey0 = key0 ^ subKey ^ rcon;
+  assign rkey1 = key1 ^ rkey0;
+  assign rkey2 = key2 ^ rkey1;
+  assign rkey3 = key3 ^ rkey2;
+
+  assign roundKey = {rkey0, rkey1, rkey2, rkey3};
+
+
+endmodule
+
+module addRoundKey(input logic [127:0] a,
+                    input logic [127:0] roundKey,
                     output logic [127:0] y);
+
+  logic [31:0] a0, a1, a2, a3;
+  logic [31:0] rkey0, rkey1, rkey2, rkey3;
+  logic [31:0] y0, y1, y2, y3;
+
+  assign {a0, a1, a2, a3} = a;
+  assign {rkey0, rkey1, rkey2, rkey3} = roundKey;
+
+  assign y0 = a0 ^ rkey0;
+  assign y1 = a1 ^ rkey1;
+  assign y2 = a2 ^ rkey2;
+  assign y3 = a3 ^ rkey3;
+
+  assign y = {y0, y1, y2, y3};
+
 
 endmodule
