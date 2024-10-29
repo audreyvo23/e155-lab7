@@ -78,7 +78,45 @@ module aes_core(input  logic         clk,
                 input  logic [127:0] plaintext, 
                 output logic         done, 
                 output logic [127:0] cyphertext);
-//TO DO GET OUTPUT VALUE HERE
+
+	/*logic [127:0] y0, y1, y2, y3, y4;
+	logic [127:0] roundkey;
+	logic [3:0] round;
+	logic [127:0] tempkey;
+	logic round10;
+	logic mainrounds;
+	logic initround;
+	
+	assign round = 1;
+	assign tempkey = key;
+
+	addRoundKey arkcore1(plaintext, key, y0);
+	subByte sbcore1(y0, clk, y1);
+	shiftRows srcore1(y1, y2);
+	mixcolumns mccore1(y2, y3);
+	keyExpansion keyexp1(key, round, clk, roundkey);
+	addRoundKey arkcore2(y3, roundkey, cyphertext);
+
+	assign done = 1;
+
+ 	always_ff @(posedge clk)
+		begin
+			if(initround) addRoundKey arkcore1(plaintext, key, y0);
+			else if(mainrounds) begin
+				subByte sbcore1(y0, clk, y1);
+				shiftRows srcore1(y1, y2);
+				mixcolumns mccore1(y2, y3);
+				keyExpansion keyexp1(key, round, clk, roundkey);
+				addRoundKey arkcore2(y3, roundkey, cyphertext);
+				end
+			else if(round10) begin
+				subByte sbcore2(y0, clk, y1);
+				shiftRows srcore2(y1, y2);
+				keyExpansion keyexp2(key, round, clk, roundkey);
+				addRoundKey arkcore3(y3, roundkey, cyphertext);
+				assign done = 1;
+				end 
+	end*/
     
 endmodule
 
