@@ -72,7 +72,7 @@ endmodule
 //        [127:96]  [95:64] [63:32] [31:0]      w[0]    w[1]    w[2]    w[3]
 /////////////////////////////////////////////
 
-module aes_core(input  logic         clk, 
+/*module aes_core(input  logic         clk, 
                 input  logic         load,
                 input  logic [127:0] key, 
                 input  logic [127:0] plaintext, 
@@ -80,31 +80,33 @@ module aes_core(input  logic         clk,
                 output logic [127:0] cyphertext);
 //TO DO GET OUTPUT VALUE HERE
     
-endmodule
+endmodule */
 
-module fsm(input logic clk, load,
-		input logic [127:0] plaintext,
+module aes_core(input logic clk, load,
 		input logic [127:0] key,
+		input logic [127:0] plaintext,
 		output logic done,
 		output logic [127:0] cyphertext
 		);
 	
 	logic [3:0] round = 0;
 	logic [127:0] y0, y1, y2, y3, y4, tempy1, tempy2, tempy3, tempy4;
-	logic [127:0] roundkey, temproundkey;
+	logic [127:0] roundkey;
+	logic [127:0] temproundkey;
 	logic [127:0] fsmkey;
+	logic [127:0] temptext;
 	logic loadDelay, reset;
 	logic testS6 = 0;
 	logic testS5 = 0;
 	logic testS8 = 0;
 	logic testS10 = 0;
 	
-	assign temproundkey = key;
+	//assign temproundkey = key;
 	assign loadDelay = 0;
 	
 	
 
-	enum int {S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13} state, nextstate;
+	enum int {S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14} state, nextstate;
 	
 	/*always_ff @(posedge clk)
 		if (load && !loadDelay)  begin 
@@ -137,7 +139,8 @@ module fsm(input logic clk, load,
 		S11: nextstate = S12;
 		S12: if(round == 10) nextstate = S13;
 		    else nextstate = S1;
-		S13: nextstate = S0;
+		S13: nextstate = S14;
+		S14: nextstate = S14;
 		default:  nextstate = S0;
 		endcase
 
@@ -148,6 +151,8 @@ module fsm(input logic clk, load,
 		S0: begin y3 <= plaintext;
 		    roundkey <= key;
 		    round <= 0;
+		    done <= 0;
+		    temproundkey <= key;
 		    end
 		//S1: round <= round +1;
 		S2: y0 <= tempy4;
@@ -164,9 +169,12 @@ module fsm(input logic clk, load,
 		 end
 		S12: begin y3 <= tempy3;
 			roundkey <= temproundkey;
+			temptext <= tempy4;
 		     end
-		S13: 	begin y3 <= tempy2;
+		S13: y3 <= tempy2;
+		S14: 	begin //y3 <= tempy2;
 			done <= 1;
+			temptext <= tempy4;
 			end
 		endcase
 
@@ -176,7 +184,7 @@ module fsm(input logic clk, load,
 	keyExpansion keyexp1(fsmkey, round, clk, temproundkey);
 	addRoundKey arkcore2(y3, roundkey, tempy4);
 
-	assign cyphertext = tempy4;
+	assign cyphertext = temptext;
 
 
 endmodule
